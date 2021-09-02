@@ -9,7 +9,7 @@ c_emd = Extension(
     include_dirs=['c_emd', np.get_include()])
 
 setup(
-    name='emd',
+    name='pyemd',
     version='2.0',
     description=(
       "Accurate, efficient Earth Mover's Distance in Python."
@@ -19,6 +19,6 @@ setup(
     url='https://github.com/garydoranjr/pyemd.git',
     license="BSD compatable (see the LICENSE file)",
     platforms=['unix'],
-    packages=['emd'],
+    packages=['pyemd'],
     ext_modules=[c_emd]
 )
